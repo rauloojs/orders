@@ -11,3 +11,6 @@ WORKDIR /src
 
 RUN adduser -D user
 USER user
+
+COPY ./entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["sh", "/entrypoint.sh"]
