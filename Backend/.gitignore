@@ -126,3 +126,6 @@ dmypy.json
 bin
 include
 lib
+
+# Ignore static folder. There is a collecstatic step in Docker build process
+static/
