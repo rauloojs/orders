@@ -8,7 +8,7 @@ class OrderViewSet(ModelViewSet):
     API Endpoint that allows Orders actions
     """
 
-    queryset = Order.objects.all()
+    queryset = Order.objects.all().order_by('-id')
     serializer_class = OrderSerializer
 
     def perform_create(self, serializer):
