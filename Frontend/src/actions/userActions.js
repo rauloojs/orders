@@ -1,3 +1,4 @@
+import { toastr } from 'react-redux-toastr';
 import * as USER_CONSTANTS from '../constants/userConstants';
 import userService from '../services/userService';
 import history from '../utils/history';
@@ -21,16 +22,20 @@ export const signIn = () => {
       return { type: USER_CONSTANTS.LOGGED_IN };
     }
 
+    function fail(error) {
+      const errors = Object.keys(error).map(key => `${key}: ${error[key]}`);
+      toastr.error('No fue posible iniciar sesión', errors.toString());
+    }
+
     const { username, password } = getState().user;
 
-    userService.signIn(
-      {
-        username,
-        password
-      },
+    userService.signIn({ username, password }).then(
       () => {
         dispatch(success());
         history.push('/');
+      },
+      error => {
+        fail(error.response.data);
       }
     );
   };

@@ -3,7 +3,7 @@ import { setItem, removeItem } from './localStorage';
 import history from '../utils/history';
 
 // Sign in user to get token for authentication
-const signIn = async (user, callback) => {
+const signIn = async user => {
   const {
     data: { token }
   } = await login(user);
@@ -11,7 +11,6 @@ const signIn = async (user, callback) => {
   setAuthHeader(token);
 
   setItem(AUTH_TOKEN, token);
-  callback();
 };
 
 // Sign out user by simply removing auth token
