@@ -19,4 +19,4 @@ class Order(models.Model):
     client_phone = PhoneNumberField()
     client_address = models.CharField(max_length=300)
     client_name = models.CharField(max_length=255)
-    order = JSONField(default=list, blank=True)
+    order = models.CharField(max_length=500)

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "App de pedidos",
+  "name": "Ejemplo de app de pedidos en tiempo real",
   "icons": [
     {
       "src": "favicon.ico",
