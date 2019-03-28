@@ -1,0 +1,17 @@
+# Basic project and API
+Django>=2.1.7,<2.2.0
+psycopg2>=2.7.7,<2.8.0
+djangorestframework>=3.9.2,<3.10.0
+pytz==2018.9
+
+# Django channels and async server
+channels>=2.1.7,<2.2.0
+channels_redis>=2.3.3,<2.4.0
+daphne>=2.2.5,<2.3.0
+
+# Serve static files
+whitenoise>=4.1.2,<4.2.0
+
+# Better phone number field
+django-phonenumber-field>=2.3.1,<2.4.0
+phonenumbers>=8.10.8,<8.11.0
