@@ -4,7 +4,17 @@
 
 ![](/assets/example.gif)
 
-You can run Compose on macOS, Windows, and 64-bit Linux.
+## How it works?
+
+Head to http://localhost/login and sign in with your user credentials.
+
+You will be redirected to http://localhost and you'll be able to see Orders list.
+
+If you want to create a new order go to http://localhost/create.
+
+Open `/` and `/create` views in two different windows to see the incoming order in real time.
+
+**NOTE:** It is possible that you won't be able to sign in if you already have a session with django admin (please logout or use incognito mode).
 
 ## Prerequisites
 
