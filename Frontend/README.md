@@ -1,3 +1,5 @@
+# Frontend
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Folder structure
@@ -65,3 +67,15 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Dependencies
+
+- **react**
+- **axios** for http requests
+- **bootstrap + reactstrap** for UI
+- **date-fns** for human readable dates
+- **react-router-dom + history** to manage browser history and set up routes
+- **react-icons** for font awesome icons
+- **redux + react-redux + redux-thunk + redux-logger** for state management
+- **react-redux-toastr** for notifications
+- **eslint + prettier + lint-staged + husky** for code quality
